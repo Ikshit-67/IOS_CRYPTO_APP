@@ -15,7 +15,7 @@ struct TopMoversView: View {
             
             ScrollView{
                 HStack{
-                    
+                    // lolm..testing
                 }
             }
         }
