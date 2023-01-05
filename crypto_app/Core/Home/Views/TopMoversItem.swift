@@ -26,7 +26,7 @@ struct TopMoversItem: View {
                     .fontWeight(.semibold)
                 
                 // coin price
-                Text("$ 234,786")
+                Text("$ 23,000.00")
                     .font(.callout)
                     .foregroundColor(.gray)
             }
