@@ -9,33 +9,38 @@ import SwiftUI
 
 struct AllCoinsView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 10){
+        VStack(alignment: .leading, spacing: 15){
+
             // coin image
             Image(systemName: "bitcoinsign.circle.fill")
                 .resizable()
-                .frame(width: 35, height: 35)
-                .foregroundColor(.orange)
+                .frame(width: 45, height: 45)
+                .foregroundColor(.blue)
             
-            // coin name
+            // coin info
             HStack{
+                
+                // coin name
                 Text("BTC")
-                    .font(.callout)
+                    .font(.title3)
                     .fontWeight(.bold)
                 
+                // coin price
                 Text("$278,098")
-                    .font(.caption)
+                    .font(.title3)
                     .foregroundColor(.gray)
             }
             
             // coin % change
             Text("+ %0.12")
                 .font(.title2)
+                .fontWeight(.semibold)
                 .foregroundColor(.green)
         }
-        .frame(width: 140, height: 140)
+        .frame(width: 165, height: 165)
         .overlay(
             RoundedRectangle(cornerRadius:20)
-                .stroke(Color(.systemGray4), lineWidth: 2)
+                .stroke(Color(.systemGray3), lineWidth: 3)
         )
     }
 }
