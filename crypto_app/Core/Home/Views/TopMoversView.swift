@@ -9,16 +9,25 @@ import SwiftUI
 
 struct TopMoversView: View {
     var body: some View {
-        VStack{
+        
+        VStack(alignment: .leading){
+            // main heading : top movers
             Text("Top Movers")
-                .font(.headline)
+                .font(.title2)
+                .fontWeight(.semibold)
             
-            ScrollView{
+            // horizontal carousel
+            ScrollView(.horizontal, showsIndicators: false){
+                
                 HStack{
-                    // lolm..testing
+                    ForEach(0 ..< 5, id: \.self) {
+                        _ in TopMoversItemView()
+                    }
                 }
+                
             }
         }
+        .padding()
     }
 }
 

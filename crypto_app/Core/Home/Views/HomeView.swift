@@ -10,14 +10,16 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView{
-            ScrollView(.vertical, showsIndicators: false) {
+            ScrollView(.vertical, showsIndicators: false){
                 
-                // top Movers
+                // top movers
+                TopMoversView()
                 
-                // all Coins
+                // all coins
+                
                 
             }
-            .navigationTitle("Live Prices")
+            . navigationTitle("Live Prices")
         }
     }
 }

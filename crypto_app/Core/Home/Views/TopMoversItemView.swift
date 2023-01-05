@@ -7,46 +7,46 @@
 
 import SwiftUI
 
-struct AllCoinsView: View {
+struct TopMoversItemView: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 15){
-
+        VStack(alignment: .leading, spacing: 10){
+            
             // coin image
             Image(systemName: "bitcoinsign.circle.fill")
                 .resizable()
-                .frame(width: 45, height: 45)
-                .foregroundColor(.blue)
+                .frame(width: 35, height: 35)
+                .foregroundColor(.orange)
+                
             
             // coin info
             HStack{
                 
                 // coin name
                 Text("BTC")
-                    .font(.title3)
-                    .fontWeight(.bold)
+                    .font(.callout)
+                    .fontWeight(.semibold)
                 
                 // coin price
-                Text("$278,098")
-                    .font(.title3)
+                Text("$230,987")
+                    .font(.callout)
                     .foregroundColor(.gray)
             }
             
-            // coin % change
-            Text("+ %0.12")
-                .font(.title2)
-                .fontWeight(.semibold)
+            // price % change
+            Text("+ 1.987%")
+                .font(.title3)
                 .foregroundColor(.green)
         }
-        .frame(width: 165, height: 165)
+        .frame(width: 150, height: 150)
         .overlay(
-            RoundedRectangle(cornerRadius:20)
-                .stroke(Color(.systemGray3), lineWidth: 3)
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color(.systemGray3), lineWidth: 2)
         )
     }
 }
 
 struct AllCoinsView_Previews: PreviewProvider {
     static var previews: some View {
-        AllCoinsView()
+        TopMoversItemView()
     }
 }
