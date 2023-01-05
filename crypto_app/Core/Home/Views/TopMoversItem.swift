@@ -10,6 +10,7 @@ import SwiftUI
 struct TopMoversItem: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10){
+            
             // coin image
             Image(systemName: "bitcoinsign.circle.fill")
                 .resizable()
@@ -18,6 +19,7 @@ struct TopMoversItem: View {
             
             // coin info
             HStack{
+                
                 //coin name
                 Text("BTC")
                     .font(.callout)
@@ -34,6 +36,7 @@ struct TopMoversItem: View {
                 .font(.title3)
                 .foregroundColor(.green)
         }
+        // gray frame
         .frame(width: 150, height: 150)
         .overlay(
             RoundedRectangle(cornerRadius: 10)

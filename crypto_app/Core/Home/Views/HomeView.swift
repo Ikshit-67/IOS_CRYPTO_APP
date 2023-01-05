@@ -9,7 +9,17 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("lol")
+        NavigationView{
+            ScrollView(.vertical, showsIndicators: false){
+                
+                // top movers
+                TopMoversView()
+                
+                
+                // all coins
+            }
+            .navigationTitle("Live Prices")
+        }
     }
 }
 

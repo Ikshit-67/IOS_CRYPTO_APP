@@ -13,6 +13,7 @@
 		B1893DB82965F7A60075104B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1893DB72965F7A60075104B /* Preview Assets.xcassets */; };
 		B1FC19972966B82E00BFB573 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC19962966B82E00BFB573 /* HomeView.swift */; };
 		B1FC19992966B8A100BFB573 /* TopMoversItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC19982966B8A100BFB573 /* TopMoversItem.swift */; };
+		B1FC199B2966BA8E00BFB573 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC199A2966BA8E00BFB573 /* TopMoversView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B1893DB72965F7A60075104B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1FC19962966B82E00BFB573 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B1FC19982966B8A100BFB573 /* TopMoversItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItem.swift; sourceTree = "<group>"; };
+		B1FC199A2966BA8E00BFB573 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				B1FC19962966B82E00BFB573 /* HomeView.swift */,
 				B1FC19982966B8A100BFB573 /* TopMoversItem.swift */,
+				B1FC199A2966BA8E00BFB573 /* TopMoversView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				B1FC19992966B8A100BFB573 /* TopMoversItem.swift in Sources */,
 				B1FC19972966B82E00BFB573 /* HomeView.swift in Sources */,
+				B1FC199B2966BA8E00BFB573 /* TopMoversView.swift in Sources */,
 				B1893DB32965F7A50075104B /* ContentView.swift in Sources */,
 				B1893DB12965F7A50075104B /* crypto_appApp.swift in Sources */,
 			);
