@@ -21,16 +21,16 @@ struct HomeView: View {
                 Divider()
                 
                 // all coins
-                AllCoinsContainer()
+                AllCoinsContainer(viewModel: viewModel)
                 
             }
             .navigationTitle("Live Prices")
         }
     }
 }
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}
+//
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView()
+//    }
+//}
