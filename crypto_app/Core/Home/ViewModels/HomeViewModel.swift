@@ -12,25 +12,30 @@ class HomeViewModel: ObservableObject{
     init(){
         fetchCoinData()
     }
- 
-    func fetchCoinData() {
-        let urlStr = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=24h"
+    
+    func fetchCoinData(){
         
-        guard let url = URL(string: urlStr) else { return }
+        let urlString = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=24h"
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if let error = error{
-                print("DEBUG ERROR : \(error.localizedDescription)")
-                return
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTask(with: url) {data, response, error in
+            if let error = error {
+                print("DEBUG : ERROR\(error.localizedDescription)")
             }
             
             if let response = response as? HTTPURLResponse{
-                print("DEBUG RESPONSE : \(response.statusCode)")
+                print("DEBUG : Response code : \(response.statusCode)")
             }
             
+            
             guard let data = data else { return }
-            print("DEBUG DATA \(data)")
+            let dataAsString = String(data: data, encoding: .utf8)
+            print("DEBUG : DATA \(String(describing: dataAsString))")
+            
         }
         .resume()
+        
     }
+    
 }
