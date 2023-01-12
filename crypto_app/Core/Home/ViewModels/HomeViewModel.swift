@@ -34,6 +34,7 @@ class HomeViewModel: ObservableObject{
             
             do{
                 let coins = try JSONDecoder().decode([Coin].self, from: data)
+                print("DEBUG : coins \(coins)")
             } catch let error {
                 print("Status : Phuked Up, beech throw this error : \(error)")
             }

@@ -13,7 +13,7 @@ struct Coin: Codable {
     let marketCap, marketCapRank, fullyDilutedValuation, totalVolume: Double?
     let high24H, low24H: Double?
     let priceChange24H, priceChangePercentage24H: Double
-    let marketCapChange24H: Int?
+    let marketCapChange24H: Double?
     let marketCapChangePercentage24H: Double?
     let circulatingSupply, totalSupply, maxSupply, ath: Double?
     let athChangePercentage: Double?
