@@ -11,6 +11,7 @@
 		B1893DB32965F7A50075104B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1893DB22965F7A50075104B /* ContentView.swift */; };
 		B1893DB52965F7A60075104B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1893DB42965F7A60075104B /* Assets.xcassets */; };
 		B1893DB82965F7A60075104B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1893DB72965F7A60075104B /* Preview Assets.xcassets */; };
+		B1AD5A4F2970229F00E96A6E /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AD5A4E2970229F00E96A6E /* Coin.swift */; };
 		B1FC19972966B82E00BFB573 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC19962966B82E00BFB573 /* HomeView.swift */; };
 		B1FC19992966B8A100BFB573 /* TopMoversItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC19982966B8A100BFB573 /* TopMoversItem.swift */; };
 		B1FC199B2966BA8E00BFB573 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC199A2966BA8E00BFB573 /* TopMoversView.swift */; };
@@ -25,6 +26,7 @@
 		B1893DB22965F7A50075104B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1893DB42965F7A60075104B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1893DB72965F7A60075104B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1AD5A4E2970229F00E96A6E /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		B1FC19962966B82E00BFB573 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B1FC19982966B8A100BFB573 /* TopMoversItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItem.swift; sourceTree = "<group>"; };
 		B1FC199A2966BA8E00BFB573 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		B1893DAF2965F7A50075104B /* crypto_app */ = {
 			isa = PBXGroup;
 			children = (
+				B1AD5A4D2970229100E96A6E /* Model */,
 				B1893DBF2965F7B60075104B /* Core */,
 				B1893DBE2965F7B20075104B /* App */,
 				B1893DB22965F7A50075104B /* ContentView.swift */,
@@ -123,6 +126,14 @@
 				B1FC19A02966CC5A00BFB573 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B1AD5A4D2970229100E96A6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1AD5A4E2970229F00E96A6E /* Coin.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AD5A4F2970229F00E96A6E /* Coin.swift in Sources */,
 				B1FC199D2966BE8700BFB573 /* AllCoinsContainer.swift in Sources */,
 				B1FC19992966B8A100BFB573 /* TopMoversItem.swift in Sources */,
 				B1FC19972966B82E00BFB573 /* HomeView.swift in Sources */,
