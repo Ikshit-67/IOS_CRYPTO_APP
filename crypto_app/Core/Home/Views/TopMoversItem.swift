@@ -30,15 +30,15 @@ struct TopMoversItem: View {
                     .fontWeight(.semibold)
                 
                 // coin price
-                Text("\(coin.currentPrice)")
+                Text(coin.currentPrice.toCurrency())
                     .font(.callout)
                     .foregroundColor(.gray)
             }
             
             // price % change
-            Text("\(coin.priceChangePercentage24H) %")
+            Text(coin.priceChangePercentage24H.toPercent())
                 .font(.title3)
-                .foregroundColor(.green)
+                .foregroundColor(coin.priceChangePercentage24H > 0 ? .green : .red)
         }
         // gray frame
         .frame(width: 150, height: 150)

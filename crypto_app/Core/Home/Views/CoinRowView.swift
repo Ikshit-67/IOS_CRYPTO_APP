@@ -24,7 +24,6 @@ struct CoinRowView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 35, height: 35)
-                .foregroundColor(.blue)
                 .padding(.leading, 4)
             
             // name hstack
@@ -45,12 +44,12 @@ struct CoinRowView: View {
             
             // Price
             VStack(alignment: .trailing, spacing: 5){
-                Text("$\(coin.currentPrice)")
+                Text(coin.currentPrice.toCurrency())
                     .font(.caption)
                     .fontWeight(.semibold)
                 
-                Text("\(coin.priceChangePercentage24H) %")
-                    .foregroundColor(.green)
+                Text(coin.priceChangePercentage24H.toPercent())
+                    .foregroundColor(coin.priceChangePercentage24H > 0 ? .green : .red)
             }
         }
         .padding(.horizontal)
