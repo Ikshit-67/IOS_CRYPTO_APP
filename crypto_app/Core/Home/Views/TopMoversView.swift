@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TopMoversView: View {
+    @StateObject var viewModel = HomeViewModel()
     var body: some View {
         VStack(alignment: .leading){
             
@@ -19,8 +20,8 @@ struct TopMoversView: View {
             // top movers carousel
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(spacing: 10){
-                    ForEach(0 ..< 5, id: \.self){
-                        _ in TopMoversItem()
+                    ForEach(viewModel.topMovingCoins){
+                        coin in TopMoversItem(coin: coin)
                     }
                 }
             }
@@ -28,9 +29,9 @@ struct TopMoversView: View {
         .padding()
     }
 }
-
-struct TopMoversView_Previews: PreviewProvider {
-    static var previews: some View {
-        TopMoversView()
-    }
-}
+//
+//struct TopMoversView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TopMoversView()
+//    }
+//}

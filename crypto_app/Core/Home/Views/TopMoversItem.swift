@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TopMoversItem: View {
+    @StateObject var viewModel = HomeViewModel()
+    let coin: Coin
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 10){
             
@@ -21,18 +24,18 @@ struct TopMoversItem: View {
             HStack{
                 
                 //coin name
-                Text("BTC")
+                Text(coin.symbol.uppercased())
                     .font(.callout)
                     .fontWeight(.semibold)
                 
                 // coin price
-                Text("$ 23,000.00")
+                Text("\(coin.currentPrice)")
                     .font(.callout)
                     .foregroundColor(.gray)
             }
             
             // price % change
-            Text("+ %2.367")
+            Text("\(coin.priceChangePercentage24H) %")
                 .font(.title3)
                 .foregroundColor(.green)
         }
@@ -44,9 +47,9 @@ struct TopMoversItem: View {
         )
     }
 }
-
-struct TopMoversItem_Previews: PreviewProvider {
-    static var previews: some View {
-        TopMoversItem()
-    }
-}
+//
+//struct TopMoversItem_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TopMoversItem()
+//    }
+//}
