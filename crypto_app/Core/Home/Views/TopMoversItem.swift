@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TopMoversItem: View {
     @StateObject var viewModel = HomeViewModel()
@@ -15,7 +16,7 @@ struct TopMoversItem: View {
         VStack(alignment: .leading, spacing: 10){
             
             // coin image
-            Image(systemName: "bitcoinsign.circle.fill")
+            KFImage(URL(string: coin.image))
                 .resizable()
                 .frame(width: 35, height: 35)
                 .foregroundColor(.blue)
