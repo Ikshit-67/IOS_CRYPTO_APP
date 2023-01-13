@@ -13,7 +13,7 @@ struct CoinRowView: View {
     var body: some View {
         HStack{
             // serial number
-            Text("\(coin.marketCapRank ?? 1)")
+            Text("\(coin.marketCapRank)")
                 .font(.caption)
                 .foregroundColor(.gray)
                 .bold()
